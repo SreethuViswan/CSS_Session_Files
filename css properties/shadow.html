@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box-with-shadow{
+        width: 200px;
+        height: 250px;
+        background-color: aqua;
+        box-shadow: 15px 15px 10px pink;
+    }
+    .text-with-shadow{
+      font-size: x-large;
+        text-shadow: 20px 20px 5px rgb(55, 6, 230);
+    }
+    .inset-shadow{
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        box-shadow: inset 15px 15px 10px green;
+    }
+    .multiple-shadows{
+        width: 200px;
+        height: 200px;
+        background-color:blueviolet;
+        box-shadow: 15px 15px 5px green,-10px -15px 5px red ;
+    }
+    .text-with-outer-shadow{
+        font-size: x-large;
+         text-shadow: 20px 20px 3px rgb(55, 6, 230);
+         box-shadow: 15px 15px 5px green;
+    }
+</style>
+</head>
+<body>
+    <div class="box-with-shadow"></div>
+    
+    <div class="inset-shadow"></div>
+
+    <div class="multiple-shadows"></div>
+    <div></div>
+    <p class="text-with-shadow">Hi Good Morning All</p>
+    <p class="text-with-outer-shadow"> Text with outer shadow </p>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:hover{
+            visibility:hidden;
+        }
+        p{
+           visibility: visible; 
+        }
+        div{
+            opacity:0.3  /*value 0 blurred to 1 clear*/;
+        }
+        button{
+            color: rgb(39, 174, 77);
+            background-color: brown;
+        }
+        button:active{
+            opacity: 0.5;
+        }
+        .cont1{
+            width: 200px;
+            height: 250px;
+            background-color: blue;
+            transition:1s ;
+        }
+        .cont1:hover{
+            background-color :rgb(255, 0, 0);
+            border-radius: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Hi Good Morning</h1>
+    <p id="123">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptas.</p>
+    <div>
+    <p id="234">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolore rerum nisi necessitatibus cupiditate quae, quibusdam qui! Laboriosam error, minima expedita ab cumque distinctio placeat?</p>
+    </div>
+    <button>Click Me</button>
+    
+    <marquee behavior="alternate" direction="left">
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   </p>
+</marquee>
+<div class="cont1">
+
+    </div>
+</body>
+</html>

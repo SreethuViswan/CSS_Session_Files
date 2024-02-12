@@ -1,0 +1,47 @@
+/*element selector*/
+/* p{
+    background-color: green; 
+
+} */
+
+/*id selector*/
+#para1{
+    border:black 10px dashed;
+}
+
+
+.loremclass{
+     color: rgb(234, 12, 119);
+     border: red 5px dotted;
+     
+}
+
+.loremclass2{
+    background-color: green;
+}
+/*universal selector*/
+
+*{
+    background-color: rgb(174, 192, 207);
+    padding: 5px;
+}
+/*child selector*/
+ul>li{
+   font-weight:normal; 
+   color:blue;
+}
+li li{
+    font-weight: bold;
+    color: orangered;
+}
+
+div #parag1{
+    border:5px rebeccapurple dashed ;
+    background-color: yellowgreen;
+}
+
+.container #head1{
+    color: brown;
+
+
+}

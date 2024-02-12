@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,p,a{
+            color: red;
+    
+        }
+
+        input[type=text]{
+            background-color: black;
+            color:white
+        }
+
+        button{
+            background-color: rgb(34, 136, 64);
+        }
+
+
+/*pseudoclasses*/
+        button:hover{
+            color: rgb(165, 42, 42);
+         border-radius: 50px;
+        }
+
+        button:active{
+            background-color: white;
+        }
+
+        a:hover{
+            color:blueviolet
+        }
+
+        a:active{
+            color:orangered
+        }
+        a:visited{
+            color:yellow
+        }
+
+/*pseudo elements*/
+h1::before{
+    content: "before";
+}
+
+h1::after{
+    content:"after" ;
+}
+
+p::first-line{
+    color:blue;
+}
+
+h3::first-letter{
+    color:rgb(255, 0, 132)
+}
+
+input::placeholder{
+    color:yellow;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>This is first heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illum aliquid voluptate beatae perferendis corrupti fuga, error voluptas eos sed id laudantium, hic accusantium! Illo.</p>
+
+    <h3>Hello everyone</h3>
+    <br>
+    <a href="https://www.instagram.com/accounts/login/">instagram login</a>
+    <br>
+    <label for="123">Name:</label>
+    <input type="text" name="name" id="123" placeholder="Name" >
+    Password:<input type="password" name="password" placeholder="Password">
+   <button>Click Me</button>
+
+</body>
+</html>

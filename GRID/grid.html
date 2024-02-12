@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        background-color: aqua;
+        width: 500px;
+        height: 500px;
+        /* An HTML element becomes a grid container when its display property is set to grid */
+        display: grid;
+        /* The gap property is a shorthand property for the row-gap and the column-gap properties */
+        gap: 10px 10px;
+        grid-template-columns:auto auto auto ;
+    }
+    .container div{
+        background-color: blue;
+        color:white
+         /* width:100px;  */
+         /* height:100px;  */
+    }
+    div .item1{
+        background-color: red;
+        /* Place a grid item at column line 1, and let it end on column line 4 */
+        grid-column-start:1 ;
+        grid-column-end: 4;
+    }
+
+    div .item8{
+        background-color:green ;
+        grid-column-start:2;
+        grid-column-end: 4;
+}
+
+div .item5{
+    background-color: orangered;
+    /* Place a grid item at row line 3, and let it end on row line 5 */
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+div .item2{
+    background-color: yellow;
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+}
+
+div .item7{
+    grid-area:1/2/5/4 ;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+    </div>
+</body>
+</html>
